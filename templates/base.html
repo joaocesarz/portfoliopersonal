@@ -1,0 +1,180 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <!--- basic page needs
+        ================================================== -->
+        <meta charset="UTF-8">
+        <meta name="author" content="João César">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="João César, desenvolvedor, programador, front-end, back-end, fullstack, mobile, developer">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta name="copyright" content="© 2024 João César" />
+
+        <title>João César - Portfolio - Desenvolvedor Full Stack</title>
+
+        <!-- mobile specific metas
+        ================================================== -->
+
+
+        <!-- CSS
+        ================================================== -->
+        <link rel="stylesheet" href="{% static 'home/css/base.css' %}">
+
+
+        <!-- Scripts
+        ================================================== -->
+
+
+
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JTXXGX4Q0K"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-JTXXGX4Q0K');
+        </script>
+        <!-- End Google Analytics -->
+
+
+        <!-- favicons
+        ================================================== -->
+        <link rel="icon" type="image/png" href="favicon.png">
+
+        {% block "head" %}{% endblock "head" %}
+
+    </head>
+
+
+    <body>
+        {% block "body" %}{% endblock "body" %}
+
+
+        <script>
+
+            document.addEventListener("DOMContentLoaded", function() {
+                const icons = document.querySelectorAll('.skill-icon');
+            
+                icons.forEach(icon => {
+                    const iconDescription = icon.querySelector('.icon-description');
+            
+                    // Mostrar a descrição ao passar o mouse sobre o ícone
+                    icon.addEventListener('mouseover', function() {
+                        iconDescription.style.display = 'block';
+                    });
+            
+                    // Esconder a descrição ao tirar o mouse do ícone
+                    icon.addEventListener('mouseout', function() {
+                        iconDescription.style.display = 'none';
+                    });
+                });
+            });
+            
+
+
+
+
+            // Seleciona o elemento navbar
+            const navbar = document.querySelector('nav');
+
+            // Função para mudar a classe da navbar quando o scroll acontece
+            function handleScroll() {
+                if (window.scrollY > 0) {
+                    navbar.classList.add('navbar-scrolled');
+                } else {
+                    navbar.classList.remove('navbar-scrolled');
+                }
+            }
+
+            // Adiciona um listener para o evento scroll
+            window.addEventListener('scroll', handleScroll);
+
+
+
+            document.addEventListener('DOMContentLoaded', function() {
+                var links = document.querySelectorAll('a[href^="#"]');
+                links.forEach(function(link) {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+            
+                        var targetId = this.getAttribute('href').substring(1);
+                        var targetElement = document.getElementById(targetId);
+                        if (targetElement) {
+                            var targetPosition = targetElement.offsetTop - 80; // Ajuste conforme a altura da navbar
+            
+                            window.scrollTo({
+                                top: targetPosition,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                });
+            });
+
+            // Saiba mais
+            document.addEventListener("DOMContentLoaded", function() {
+                const link = document.querySelector('.box-arrowmore a');
+
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        const offset = 105; // Ajuste o valor conforme necessário
+                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                        window.scrollTo({
+                            top: targetPosition + offset,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Função para rolar para o topo
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' // Rola suavemente
+                });
+            }
+
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("btnTopo").style.display = "block";
+            } else {
+                document.getElementById("btnTopo").style.display = "none";
+            }
+            }
+
+            const scroll = new LocomotiveScroll({
+                el: document.querySelector('#main'),
+                smooth: true,
+                multiplier: 4.5, // Ajusta a velocidade
+            });
+            
+
+            document.addEventListener('DOMContentLoaded', function() {
+                var input = document.getElementById('usuario');
+                input.addEventListener('mousedown', function(event) {
+                    event.preventDefault(); // Previne o comportamento padrão do clique do mouse
+                });
+            });
+
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>

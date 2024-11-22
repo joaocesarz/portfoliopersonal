@@ -1,0 +1,795 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block "body" %}
+
+    <nav>
+        <a href="#home-section" class="logo">Portfólio</a>
+        <div class="links">
+            <a class="home" href="#home-section">Home</a>
+            <a class="works" href="#works-section">Trabalhos</a>
+            <a class="services" href="#services-section">Serviços</a>
+            <a class="about-me" href="#about-me-section">Sobre mim</a>
+            <a class="contact" href="#contact-me">Contato</a>
+        </div>
+        <div class="login">
+            <button class="signup">Get Started</button>
+            <button class="login-x">Login</button>
+        </div>
+    </nav>
+
+
+    <header id="home-section">
+        <div class="info-left">
+            <h1>João César <span>Developer</span></h1>
+            <p>meu caminho como desenvolvedor full stack, 
+                onde cada linha de código se transforma em 
+                inovação e cada projeto conta uma história de 
+                criatividade e aprendizado. Bem-vindo ao meu portfólio
+            </p>
+
+        </div>
+        <!--<img src="assets/foto.jpeg"> class="col align-self-end"-->
+
+    </header>
+    <div class="align-self-end">
+        <div class="box-arrowmore">
+            <a id="about" href="#about">
+                <i class='bx bxs-down-arrow'></i>                
+                <span style="margin-left: 15px;">Saiba mais</span>
+            </a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container-about" id="about-me-section">
+        <h2 class="separator">
+            Sobre mim
+        </h2>
+
+        <div class="container">
+
+            <div class="sobre-content">
+
+                <p>Olá! Sou João Vitor César Batista, é um prazer recebê-lo(a) 
+                    em meu portfólio. Sou apaixonado por Tecnologia, tenho dedicado 
+                    3 anos ao aprimoramento constante na área, sempre buscando novos 
+                    desafios e oportunidades de crescimento. Meu objetivo não é 
+                    apenas alcançar resultados excepcionais, mas também inspirar e 
+                    impactar positivamente aqueles ao meu redor. Ao longo da minha 
+                    jornada, tive a oportunidade de colaborar como Freelancer, Projetos 
+                    pessoais, Projetos em Escolas, Aulas de Desenvolvimento de Sistemas, 
+                    nos quais pude aplicar minha criatividade e expertise para maior 
+                    crescimento e conhecimento. Além do meu trabalho, sou alguém 
+                    comprometido com o aprendizado contínuo e a troca de conhecimento. 
+                    Acredito na importância de estar sempre atualizado com as tendências 
+                    do mercado e em expandir constantemente meu horizonte profissional. 
+                    Neste portfólio, você encontrará um reflexo do meu trabalho e das 
+                    minhas conquistas até o momento. Estou sempre aberto a novas 
+                    oportunidades e colaborações, então não hesite em entrar em contato 
+                    para discutir como podemos trabalhar juntos em projetos futuros.
+                </p>
+
+                <img src="{% static '/home/img/aboutme.jpg' %}" alt="Foto de João Vitor César">
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container text-center">
+
+        <div class="container-left align-self-start">
+
+            <h2>Perfil</h2>
+
+            <div class="perfil-content">
+
+                <p>Eu <i class='bx bx-heart'></i> programação e me divirto muito durante meus projetos, mergulhando em desafios e explorando novas soluções.</p>
+        
+                <ul>
+
+                    <li><strong>Nome:</strong><br> João Vitor César</li>
+                    <br>
+
+                    <li><strong>Nascimento:</strong><br> 07 de Abril de 2000</li>
+                    <br>
+                    <li><strong>Cargo:</strong><br> Freelancer, Full-Stack Developer</li>
+                    <br>
+                    <li><strong>Website:</strong><br> joaocesardev.github.io</li>
+                    <br>
+                    <li><strong>Email:</strong><br> mercadinhodoleo95@gmail.com</li>
+                    <br>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="container-right align-self-end">
+
+            <h2>Skills</h2>
+   
+            <div class="skills-content">
+
+                <p>Minhas especialidades</p>
+                <br>
+                <ul>
+                    
+                    <li>
+                        <h3>Front-End</h3>
+                        <span class="percent">70%</span>
+
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;"></div>
+                        </div>
+                        <br>
+                        <br>
+                    </li>
+
+                    <li>
+                        <h3>Back-End</h3>
+                        <span class="percent">89%</span>
+
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 89%;"></div>
+                        </div>
+                        <br>
+                        <br>
+                    </li>
+
+                    <li>
+                        <h3>Mobile</h3>
+                        <span class="percent">65%</span>
+
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 65%;"></div>
+                        </div>
+                        <br>
+                        <br>
+                    </li>
+
+                    <li>
+                        <h3>Sistemas</h3>
+                        <span class="percent">88%</span>
+
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 88%;"></div>
+                        </div>
+                        <br>
+                        <br>
+                    </li>
+
+                    <li>
+                        <h3>UI / UX</h3>
+                        <span class="percent">40%</span>
+
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 40%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row button-section">
+        <div class="col-twelve">
+            <a href="#contact" title="Entre em contato" class="btn-contact smoothscroll">Entre em contato</a>
+            <a href="#arquivopdf" title="Download CV" class="btn-cv" download>Download CV</a>
+        </div>
+    </div>
+    <br>
+    <div class="container-about" id="services-section">
+        <h2 class="separator">
+            Serviços
+        </h2>
+        <br>
+        <p id="message-sep">Se você precisa de alguém para desenvolver um aplicativo, site pessoal, comercial ou até mesmo uma simples landing page você está no lugar certo!
+            Realizo as entregas dos projetos através do Github em um repositório privado ou público, com o intuito de manter o código sempre versionado, facilitando o processo de controle de histórico.</p>
+    </div>
+    <br>
+    <br>
+
+    <div class="container">
+
+        <div class="col">
+            
+        </div>
+
+        <div class="col">
+            <div class="service">
+                <div class="bx-icon">
+                    <i class='bx bx-search'></i>
+                </div>
+                <h3>Development</h3>
+                <p>Desenvolvimento de projetos end-to-end, criando API's no padrão REST e criando websites dinâmicos ou estáticos.</p>
+                <br>
+            </div>
+            <div class="service fl-right">
+                <div class="bx-icon">
+                    <i class='bx bx-devices'></i>
+                </div>
+                <h3>Mobile-friendly</h3>
+                <p>Design responsivo tornando seu site acessível, independentemente do dispositivo. Criando telas a partir do conceito Mobile First.</p>
+                <br>
+            </div>
+            <div class="service">
+                <div class="bx-icon">
+                    <i class='bx bx-code'></i>
+                </div>
+                <h3>Analytics</h3>
+                <p>Obtenha informações sobre quem está navegando em seu site, para que você possa tomar decisões de negócios mais inteligentes.</p>
+                <br>
+            </div>
+            <div class="service fl-right">
+                <div class="bx-icon">
+                    <i class='bx bx-pointer' ></i>
+                </div>
+                <h3>Clean code</h3>
+                <p>Desenvolvimento seguindo os principais design patterns, com objetivo de tornar o código mais intuitivo, elegante e com fácil manutenção.</p>
+                <br>
+            </div>
+        </div>
+    </div>
+        
+    <section class="skills">
+
+        <div class="container">
+
+            <div class="skills-grid">
+
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class='bx bxl-python' alt="Python"></i>
+                        <div class="icon-description">
+                            <h2>Python</h2>
+                            <p>Python é uma linguagem de programação 
+                                interpretada, orientada a objetos e de alto nível com semântica 
+                                dinâmica. Sendo utilizada para desenvolvimento web do lado do 
+                                servidor, desenvolvimento de software e scripts de sistemas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class='bx bxl-django' alt="Django"></i>
+                        <div class="icon-description description-one">
+                            <h2>Django</h2>
+                            <p>Django é uma framework web para Python, que incentiva 
+                                o desenvolvimento rápido e um design limpo e pragmático. 
+                                Ele é responsável por grande parte do trabalho de 
+                                desenvolvimento web.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class='bx bxl-javascript' alt="Javascript"></i>
+                        <div class="icon-description description-two">
+                            <h2>JavaScript</h2>
+                            <p>JavaScript é uma linguagem leve e habitualmente 
+                                usado nas páginas webs, cujas implementações 
+                                permitem que o script do lado do cliente interaja 
+                                com o usuário e crie páginas dinâmicas. É uma linguagem 
+                                de programação interpretada com recursos 
+                                orientados a objetos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class='bx bxl-typescript'></i>
+                        <div class="icon-description description-tree">
+                            <h2>TypeScript</h2>
+                            <p>TypeScript é uma linguagem de programação desenvolvida 
+                                e mantida pela Microsoft. Apresentando recursos adicionais, 
+                                como vinculação de tipos estritos para JavaScript. 
+                                TypeScript supera uma das maiores falhas do JavaScript, 
+                                que é encontrar bugs no código durante a fase de desenvolvimento, 
+                                verificando qualquer problema no tempo de compilação, impedindo 
+                                a entrega do produto com defeitos para o cliente final.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class='bx bxl-github' alt="Github"></i>
+                        <div class="icon-description description-four">
+                            <h2>GitHub</h2>
+                            <p>GitHub é uma plataforma de hospedagem de código-fonte e 
+                                arquivos com controle de versão usando o Git, permitindo 
+                                que os programadores ou qualquer usuário da plataforma 
+                                contribuam em projetos privados e/ou Open Source em qualquer 
+                                lugar do mundo.
+                            </P>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class='bx bxl-bootstrap' alt="Bootstrap"></i>
+                        <div class="icon-description description-five">
+                            <h2>Bootstrap</h2>
+                            <p>Bootstrap é um framework de desenvolvimento front-end criado e mantido 
+                                pelo Twitter. Oferecendo uma ampla gama de componentes e ferramentas, 
+                                como uma estrutura de grid responsiva e um conjunto de estilos pré-construídos, 
+                                o Bootstrap facilita a criação de sites modernos e compatíveis com diferentes 
+                                dispositivos. Ele resolve um dos maiores desafios no desenvolvimento web, que 
+                                é garantir que o design funcione de maneira consistente em diversas plataformas 
+                                e tamanhos de tela, permitindo a entrega de uma experiência de usuário fluida e 
+                                bem estruturada para o cliente final.</p>
+                        </div>
+                    </div>
+                </div>
+      
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class='bx bxl-php' alt="PHP"></i>
+                        <div class="icon-description description-six">
+                            <h2>PHP</h2>
+                            <p>PHP é uma linguagem de programação amplamente usada no desenvolvimento web, 
+                                conhecida por sua capacidade de criar conteúdo dinâmico e interagir com 
+                                bancos de dados. Desenvolvida por Rasmus Lerdorf, ela facilita a integração 
+                                com várias tecnologias e permite uma rápida implementação e ajuste de código, 
+                                o que ajuda a entregar aplicativos web com menos defeitos e maior qualidade.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class='bx bxl-postgresql'alt="Postgresql"></i>
+                        <div class="icon-description description-seven">
+                            <h2>Postgresql</h2>
+                            <p>PostgreSQL é um sistema de gerenciamento de banco de dados relacional de 
+                                código aberto, conhecido por sua robustez e extensibilidade. Ele oferece 
+                                suporte a recursos avançados como transações ACID e consultas complexas, 
+                                e permite a personalização através de extensões e funções definidas pelo 
+                                usuário. É ideal para gerenciar grandes volumes de dados e garantir a 
+                                integridade e segurança das informações.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class='bx bxl-mongodb'></i>
+                        <div class="icon-description description-eight">
+                            <h2>Oracle</h2>
+                            <p>Oracle é um sistema de gerenciamento de banco de dados relacional desenvolvido 
+                                pela Oracle Corporation, conhecido por sua escalabilidade, segurança e desempenho. 
+                                Amplamente utilizado em grandes empresas, oferece funcionalidades avançadas como 
+                                suporte a transações ACID, replicação de dados e ferramentas de análise. É uma 
+                                solução confiável para gerenciar grandes volumes de dados e aplicações críticas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class='bx bxl-docker'></i>
+                        <div class="icon-description description-nine">
+                            <h2>Docker</h2>
+                            <p>Docker consiste em uma plataforma Open Source, 
+                                cujo objetivo é gerenciar aplicativos em 
+                                contêineres como se fossem VM’s. Os contêineres 
+                                são isolados uns dos outros e agrupam seus próprios 
+                                softwares, bibliotecas e arquivos de configuração.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+
+    <div class="container-about" id="works-section">
+        <h2 class="separator">
+            Formations
+        </h2>
+    </div>
+
+    <div class="sell-nft">
+        <div class="item">
+            <div class="header">
+                <i class='bx bxs-graduation'></i>
+                <h5>CST Análise e Desenvolvimento de Sistemas</h5>
+            </div>
+            <p>Sou graduado em Análise e Desenvolvimento de Sistemas, 
+                uma área que desenvolve, analisa, projeta, implementa 
+                e atualiza sistemas de informação. Tem noções de gerenciamento, 
+                porém sua especialidade é a criação de sistemas informatizados. 
+                Durante o curso, adquiri conhecimentos em linguagens de programação, 
+                arquitetura de sistemas, banco de dados e metodologias ágeis. 
+                Por meio de projetos práticos e experiências acadêmicas, 
+                desenvolvi competências para criar soluções
+                tecnológicas e eficientes.
+            </p>
+        </div>
+    
+
+        <div class="item">
+            <div class="header">
+                <i class='bx bxs-graduation'></i>
+                <h5>Pós-Graduado Engenharia de Software (Em Curso)</h5>
+            </div>
+            <p>Atualmente, estou cursando pós-graduação em Engenharia de Software, 
+                uma área que complementa minha formação em Análise e Desenvolvimento 
+                de Sistemas ao aprofundar conhecimentos em arquitetura de software, 
+                metodologias de desenvolvimento avançadas e gestão de projetos de TI. 
+                Este programa acadêmico tem me proporcionado uma visão ampliada das 
+                melhores práticas da indústria e habilidades necessárias para enfrentar 
+                desafios complexos na criação de soluções tecnológicas
+            </p>
+        </div>
+
+
+        <div class="item">
+            <div class="header">
+                <i class='bx bxs-graduation'></i>
+                <h5>Pós-Graduado em Inteligência Artificial (Em Curso)</h5>
+            </div>
+            <p>Dedicado ao aprimoramento acadêmico através de uma Pós-Graduação em 
+                Inteligência Artificial, Este programa intensivo proporciona uma imersão profunda nos 
+                fundamentos teóricos e práticos da IA, abrangendo desde algoritmos 
+                avançados até aplicações emergentes como aprendizado profundo 
+                e redes neurais. Durante o curso, tenho explorado uma ampla gama 
+                de tópicos, desde os fundamentos teóricos da IA até suas aplicações 
+                práticas mais avançadas, como processamento de linguagem natural, 
+                visão computacional.
+            </p>
+        </div>
+
+    </div>
+    <br>
+
+    <div class="container-about">
+        <h2 class="separator">
+            Professional experience
+        </h2>
+    </div>
+
+    <div class="sell-nft">
+        <div class="item">
+            <div class="header">
+                <i class='bx bxs-graduation'></i>
+                <h5>CST Análise e Desenvolvimento de Sistemas</h5>
+            </div>
+            <p>Desenvolve, analisa, projeta, implementa e atualiza sistemas 
+                de informação, combinando habilidades em gerenciamento com 
+                especialização na criação de sistemas informatizados. 
+                Seu foco inclui programação de computadores e desenvolvimento 
+                de softwares para otimizar os recursos dos equipamentos.
+            </p>
+        </div>
+    
+        <div class="item">
+            <div class="header">
+                <i class='bx bxs-graduation'></i>
+                <h5>CST Análise e Desenvolvimento de Sistemas</h5>
+            </div>
+            <p>Desenvolve, analisa, projeta, implementa e atualiza sistemas 
+                de informação, combinando habilidades em gerenciamento com 
+                especialização na criação de sistemas informatizados. 
+                Seu foco inclui programação de computadores e desenvolvimento 
+                de softwares para otimizar os recursos dos equipamentos.
+            </p>
+        </div>
+
+        <div class="item">
+            <div class="header">
+                <i class='bx bxs-graduation'></i>
+                <h5>CST Análise e Desenvolvimento de Sistemas</h5>
+            </div>
+            <p>Desenvolve, analisa, projeta, implementa e atualiza sistemas 
+                de informação, combinando habilidades em gerenciamento com 
+                especialização na criação de sistemas informatizados. 
+                Seu foco inclui programação de computadores e desenvolvimento 
+                de softwares para otimizar os recursos dos equipamentos.
+            </p>
+        </div>
+
+        <div class="item">
+            <div class="header">
+                <i class='bx bxs-graduation'></i>
+                <h5>CST Análise e Desenvolvimento de Sistemas</h5>
+            </div>
+            <p>Desenvolve, analisa, projeta, implementa e atualiza sistemas 
+                de informação, combinando habilidades em gerenciamento com 
+                especialização na criação de sistemas informatizados. 
+                Seu foco inclui programação de computadores e desenvolvimento 
+                de softwares para otimizar os recursos dos equipamentos.
+            </p>
+        </div>
+    </div>
+
+    <h2 class="separator">
+        My works
+    </h2>
+
+    <div class="nav-opt">
+        <div class="category">
+            <a href="#">Single</a>
+            <a href="#">Team</a>
+            <a href="#">Front-End</a>
+            <a href="#">Back-End</a>
+        </div>
+
+        <div class="list-proj">
+            <div class="item">
+                <img src="{% static 'home/img/logo4.jpeg' %}">
+                <div class="info">
+                    <div>
+                        <h5>Type Event</h5>
+                        <div class="bx-icon">
+                            <i class='bx bxl-python'></i>
+                            <i class='bx bxl-django' ></i>
+                        </div>
+                    </div>
+                    <p>5 of 33</p>
+                </div>
+                <div class="bid">
+                    <div class="icon-opt">
+                        <a href="#teste">Click here for more details</a>
+                    </div>
+                    
+                    <a href="#" title="Link para o github"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-figma'></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'home/img/logo1.jpeg' %}">
+                <div class="info">
+                    <div>
+                        <h5>CodeChallenge-Ninazation</h5>
+                        <div class="bx-icon">
+                            <i class='bx bxl-python'></i>
+                            <i class='bx bxl-django'></i>
+                        </div>
+                    </div>
+                    <p>7 of 12</p>
+                </div>
+                <div class="bid">
+                    <p>Click here for more details</p>
+                    <a href="#" title="Link para o github"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-figma'></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'home/img/logo3.jpeg' %}">
+                <div class="info">
+                    <div>
+                        <h5>Portfólio Pessoal</h5>
+                        <div class="bx-icon">
+                            <i class='bx bxl-python'></i>
+                            <i class='bx bxl-django'></i>
+                        </div>
+                    </div>
+                    <p>9 of 23</p>
+                </div>
+                <div class="bid">
+                    <p>Click here for more details</p>
+                    <a href="#" title="Link para o github"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-figma'></i></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'home/img/logo.jpeg' %}">
+                <div class="info">
+                    <div>
+                        <h5>Plataforma cursos</h5>
+                        <div class="bx-icon">
+                            <i class='bx bxl-python'></i>
+                            <i class='bx bxl-django'></i>
+                        </div>
+                    </div>
+                    <p>1 of 33</p>
+                </div>
+                <div class="bid">
+                    <p>Click here for more details</p>
+                    <a href="#" title="Link para o github"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-figma'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container cont" id="contact-me">
+        <div class="col col-contact">
+            <h4>Contato<h4>
+            <h1>Vamos lá?!</h1>
+            <p>Preencha o formulário abaixo para esclarermos suas dúvidas e dar início ao seu projeto!</p>
+        </div>
+    </div>
+    <div class="container bx-info-message">
+
+        <div class="col">
+            <div class="label-float">
+                <input type="text" minlength="2" name="contactName" required class="form-control" id="exampleFormControlInput1" placeholder=" ">
+                <label for="exampleFormControlInput1" class="form-label">Nome Completo *</label>
+
+            </div>
+            <div class=" label-float">
+                <input type="email" name="contactEmail" class="form-control" id="exampleFormControlInput1" placeholder=" " pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[A-Z]{2}|com|org|net|gov|mil|biz|info|mobi|name|aero|jobs|museum)\b" title="Digite um e-mail válido">
+                <label for="exampleFormControlInput1" class="form-label">Email address *</label>
+            </div>
+            
+            <div class="label-float">
+                <input type="email" name="contactSubject" class="form-control" id="exampleFormControlInput1" placeholder=" ">
+                <label for="exampleFormControlInput1" class="form-label">Assunto *</label>
+
+            </div>
+            <div class="label-float">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder=" "></textarea>
+                <label for="exampleFormControlTextarea1" class="form-label">Messagem *</label>
+
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <button class="submitform">Enviar</button>
+            </div>
+            
+            <br>
+            <br>
+        </div>
+    </div>
+
+
+<!--
+    <section id="contact">
+
+        <div class="row section-intro">
+          <div class="col-twelve">
+    
+            <h5>Contato</h5>
+            <h1>Vamos lá?!</h1>
+    
+            <p class="lead">Preencha o formulário abaixo para esclarermos suas dúvidas e dar início ao seu projeto!</p>
+    
+          </div>
+        </div>
+    
+        <div class="row contact-form">
+    
+          <div class="col-twelve">
+    
+    
+            <form name="contactForm" id="contactForm" method="POST" action="https://formspree.io/f/xknyneed">
+              <fieldset>
+    
+                <div class="form-field">
+                  <input name="contactName" type="text" id="contactName" placeholder="Nome *" value="" minlength="2" required="">
+                </div>
+                <div class="form-field">
+                  <input name="contactEmail" type="email" id="contactEmail" placeholder="Email *" value="" required="" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[A-Z]{2}|com|org|net|gov|mil|biz|info|mobi|name|aero|jobs|museum)\b" title="Digite um e-mail válido">
+                </div>
+                <div class="form-field">
+                  <input name="contactSubject" type="text" id="contactSubject" placeholder="Assunto" value="">
+                </div>
+                <div class="form-field">
+                  <textarea name="contactMessage" id="contactMessage" placeholder="Mensagem *" rows="10" cols="50" required=""></textarea>
+                </div>
+                <div class="form-field">
+                  <button class="submitform">Enviar</button>
+                  <div id="submit-loader">
+                    <div class="text-loader">Enviando...</div>
+                    <div class="s-loader">
+                      <div class="bounce1"></div>
+                      <div class="bounce2"></div>
+                      <div class="bounce3"></div>
+                    </div>
+                  </div>
+                </div>
+    
+              </fieldset>
+            </form>
+    
+
+            <div id="message-warning">
+            </div>
+
+            <div id="message-success">
+              <i class="fa fa-check"></i>Sua mensagem foi enviada! Obrigado :)<br>
+            </div>
+    
+          </div>
+    
+        </div> 
+    
+        <div class="row contact-info">
+    
+          <div class="col-four tab-full">
+    
+            <div class="icon">
+              <svg class="icon-svg icon-3x" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+              </svg>
+            </div>
+    
+            <h5>Localização</h5>
+    
+            <p>
+              Itapevi<br>
+              São Paulo<br>
+              Brasil
+            </p>
+    
+          </div>
+    
+          <div class="col-four tab-full collapse">
+            <a href="mailto:jguilhermebp@live.com">
+              <div class="icon">
+                <svg class="icon-svg icon-3x" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                </svg>
+              </div>
+    
+              <h5>Envie um e-mail</h5>
+            </a>
+    
+            <p>jguilhermebp@live.com</p>
+    
+          </div>
+    
+          <div class="col-four tab-full">
+            <a href="tel:+5511979654087">
+              <div class="icon">
+                <svg class="icon-svg icon-3x" viewBox="0 0 16 16">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg>
+              </div>
+    
+              <h5>Chamada ou WhatsApp</h5>
+            </a>
+    
+            <p>(+55) 11 97965-4087</p>
+    
+          </div>
+    
+        </div>
+    
+    </section>
+    
+    -->
+
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="right">
+            <div class="links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cooperation</a>
+                <a href="#">Sponsorship</a>
+                <a href="#">Contact Me</a>
+            </div>
+            <div class="social">
+                <a title="Instagram" href="https://www.instagram.com/joaocesargtr?igsh=MWdkYTlyMXZ6OW04Yg%3D%3D&utm_source=qr"><i class='bx bxl-instagram'></i></a>
+                <i title="Facebook" class='bx bxl-facebook-square'></i>
+                <i title="GitHub" class='bx bxl-github'></i>
+            </div>
+            <p>Copyright © 2024 João César, All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+
+    <!-- Botão para subir -->
+    <button onclick="scrollToTop()" id="btnTopo" title="Voltar para o topo"><i class='bx bx-chevron-up'></i></button>
+
+{% endblock "body" %}

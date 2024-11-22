@@ -1,0 +1,1143 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.item p {
+    color: black;
+}
+
+li {
+    color: #c4c3c3;
+}
+
+img{
+    object-fit: cover;
+}
+
+body{
+    background-color: black;  /* #151515 */
+
+    background-image: url('../img/fundo4.jpeg'); /* Caminho da sua imagem */
+    background-size: contain; /* Cobrir toda a área do body */
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+
+    padding-top: 50px; /* Ajuste conforme a altura da sua navbar */
+
+}
+
+/* Navbar */
+nav{
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Coloca a navbar acima do conteúdo */
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-scrolled {
+    background-color: rgba(219, 215, 215, 0.547); /* Cor de fundo escura */
+}
+
+nav .links a:hover {
+    transition: 0.8s;
+    border-bottom: 2px solid #304ffe;
+}
+
+nav a.logo{
+    font-size: 33px;
+    color: #304ffe;
+    font-weight: 600;
+}
+
+nav .links a:not(:last-child){
+    margin-right: 20px;
+    color: white;
+}
+
+nav .login button{
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+}
+
+nav .login button:hover{
+    background-color: #304ffe;
+    color: white;
+}
+
+nav .login .login-x {
+    padding: 8px 17px;
+    cursor: pointer;
+    border-radius: 7px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.914);
+}
+
+nav .login button.signup{
+    background-color: #304ffe;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 14px;
+}
+
+/* Page main */
+header{
+    padding: 0 80px;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .info-left{
+    width: 700px;
+}
+
+header .info-left h1{
+    font-size: 80px;
+    color: white;
+}
+
+header .info-left h1 span{
+    color: #304ffe;
+}
+
+header .info-left p{
+    margin: 40px 0;
+    color: #a6a4a4;
+}
+/*
+.header {
+    flex-direction: column; Organiza os elementos em coluna 
+}
+*/
+
+/* saiba mais */
+.box-arrowmore {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    transform: translateY(-60px); /* move a div para cima */  
+}
+
+.box-arrowmore a{
+    display: flex;
+    align-items: center;
+    border: 1px solid #304FFE;
+    color: #304FFE;
+    width: 170px;
+    padding: 8px;
+    border-radius: 60px;
+
+    transition: 0.6s;
+}
+
+.box-arrowmore a:hover {
+    color: #0f2182;
+    border: 1px solid #0f2182;
+
+}
+
+.box-arrowmore a i{
+    background-color: #fff;
+    font-size: 24px;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+/* Habilidades */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px 0 70px;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+h2, p, hr {
+    color: white;
+}
+
+.sobre {
+    color: white;
+    text-align: center;
+}
+
+.sobre-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 40px;
+    
+}
+
+.sobre-content p {
+    float: left;
+    font-size: 17px;
+    margin-right: 140px;
+}
+
+.sobre-content img {
+    width: 750px;  /*150*/
+    height: 750px; /*150*/
+    margin-right: -5rem;
+
+}
+
+.box-general {
+    margin: 30px 5% 36px 5%;
+    display: flex;
+}
+
+.container-left {
+    
+    text-align: left;
+    color: white;
+    width: 50%;
+    padding: 0 20px 0 20px;
+    float: left;
+}
+
+.container-right {
+    text-align: left;
+    color: white;
+    width: 35%;
+    padding: 0 20px 0 20px;
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container .container-right .skills-content ul li .progress-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #f0f0f0; /* Cor de fundo da barra de progresso */
+    border-radius: 0; /* Borda arredondada para a barra */
+    overflow: hidden; /* Para esconder qualquer conteúdo que ultrapasse a barra */
+    position: relative;
+    animation: progress-animation 3s ease forwards; /* Animação */
+
+}
+
+.container .container-right .skills-content ul li .progress-bar .progress {
+    width: 50%; /* Largura inicial da barra de progresso */
+    height: 5px; /* Altura da barra de progresso */
+    background-color: #304ffe; /* Cor da barra de progresso */
+    border-radius: 0;
+    transition: width 0.3s ease; /* Transição suave ao mudar a largura */
+    
+
+    /*transition: width 0.5s ease-in-out;*/
+}
+
+.container .container-right .skills-content ul li span {
+    float: right;
+    position: relative;
+
+    margin-top: -13px;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    color: white;
+}
+
+.perfil .container {
+    width: 100%;
+    color: white;
+}
+
+/* Animação da barra de progresso */
+@keyframes progress-animation {
+from {
+    width: 0%;
+}
+to {
+    width: 100%;
+}
+}
+
+li h3 {
+    width: 50%;
+    margin: 0;
+}
+
+.button-section {
+    width: 50%;
+    text-align: center;
+    margin: 0 0 70px 0;
+
+}
+
+.button-section .col-twelve .btn-contact {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 17px;
+    transition: 0.3s;
+}
+
+.button-section .col-twelve .btn-contact:hover {
+    border: 1px solid #8795e7;
+    color: #8795e7;
+
+}
+
+.button-section .col-twelve .btn-cv {
+    border: 1px solid #304ffe;
+    border-radius: 10px;
+    padding: 17px;
+    background-color: #304ffe;
+    margin-left: 1%;
+
+    transition: 0.3s;
+}
+
+.button-section .col-twelve .btn-cv:hover {
+    border: 1px solid #2946ebc0;
+    background-color: #2946ebc0;
+    color: white;
+}
+
+.container-about .separator {
+    margin: 0;
+}
+
+h2.separator{
+    padding: 0 80px;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.sell-nft{
+    padding: 0 80px;
+    margin: 50px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.sell-nft .item,
+.nav-opt .list-proj .item{
+    padding: 20px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.sell-nft .item:hover,
+.nav-opt .list-proj .item:hover,
+.sellers .item:hover{
+    box-shadow: none;
+}
+
+.sell-nft .item .header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sell-nft .item .header i{
+    font-size: 40px;
+}
+
+.sell-nft .item .header h5{
+    font-size: 17px;
+}
+
+.sell-nft .item p{
+    margin-top: 10px;
+    padding: 0 4px;
+}
+
+.nav-opt{
+    padding: 0 80px;
+    margin-top: 30px;
+}
+
+.nav-opt .category{
+    display: flex;
+    gap: 14px;
+}
+
+.nav-opt .category a{
+    background-color: #304FFE;
+    padding: 8px 14px;
+    font-size: 15px;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+}
+
+.nav-opt .category a:hover{
+    color: #fff;
+    background-color: #0f2182;
+}
+
+.nav-opt .list-proj{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.nav-opt .list-proj .item img{
+    width: 280px;
+    height: 280px;
+    border-radius: 18px;
+    opacity: 100%;
+}
+
+.nav-opt .list-proj .item .info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #edecec;
+}
+
+.nav-opt .list-proj .item {
+    background-color: #fff;
+}
+
+.nav-opt .list-proj .item .bid p:hover {
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: #a9a6a6;
+
+}
+
+.nav-opt .list-proj .item .info h5{
+    font-size: 18px;
+}
+
+.nav-opt .list-proj .item .info .bx-icon{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-opt .list-proj .item .bx-icon i{
+    font-size: 18px;
+    color: #304ffe;
+}
+
+.nav-opt .list-proj .item .bx-icon p{
+    font-size: 12px;
+    color: #304ffe;
+}
+
+.nav-opt .list-proj .item .info > p{
+    font-size: 12px;
+    color: #989898;
+}
+
+.nav-opt .list-proj .item .bid{
+    padding: 14px 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-opt .list-proj .item .bid p,
+.nav-opt .list-proj .item .bid a{
+    background-color: #edecec;
+    padding: 6px 10px;
+    font-size: 13px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.nav-opt .list-proj .item .bid .icon-opt a {
+    background-color: #edecec;
+    padding: 6px 10px;
+    font-size: 13px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.nav-opt .list-proj .item .bid a{
+    color: black;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-opt .list-proj .item .bid a:hover{
+    color: black;
+    background-color: gray;
+}
+
+.view-more{
+    margin: 10px 0 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.view-more button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: #dfdcdc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.view-more button:hover{
+    color: #fff;
+    background: #0f2182;
+}
+
+.sellers{
+    padding: 0 80px;
+    margin: 40px 0 80px;
+    display: flex;
+    gap: 30px;
+}
+
+.sellers .item {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    width: 25%;
+    gap: 14px;
+    padding: 14px;
+    border-radius: 18px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.sellers .item img{
+    width: 64px;
+}
+
+.sellers .item .info p{
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.bx-info-message {
+    width: 50%;
+}
+
+.label-float {
+    color: #fff;
+    position: relative;
+    padding-top: 13px;
+}
+  
+.label-float input {
+    color: #fff;
+    background-color: #151515;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    outline: none;
+    min-width: 250px;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+}
+
+.label-float textarea {
+    background-color: #151515;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    outline: none;
+    min-width: 250px;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+}
+  
+.label-float input:focus {
+    color: #fff;
+    background-color: #151515;
+    border: 2px solid #3951b2;
+}
+
+.label-float textarea:focus {
+    color: #fff;
+    background-color: #151515;
+    border: 2px solid #3951b2;
+}
+  
+.label-float input::placeholder {
+    color: transparent;
+}
+
+.label-float textarea::placeholder {
+    color: transparent;
+}
+  
+.label-float label {
+    pointer-events: none;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 15px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    background-color: #151515;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+.label-float input:focus+label,
+.label-float input:not(:placeholder-shown)+label {
+    background-color: #151515;
+    font-size: 13px;
+    top: 0;
+    color: #3951b2;
+}
+
+.label-float textarea:focus+label,
+.label-float textarea:not(:placeholder-shown)+label {
+    background-color: #151515;
+    font-size: 13px;
+    top: 0;
+    color: #3951b2;
+}
+
+
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    width: 23%;
+    margin-top: -40%;
+}
+
+.skill-item {
+    text-align: center;
+}
+
+.skill-icon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    line-height: 125px; /* For vertical centering */
+    border-radius: 50%; /* Make it round */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.skill-icon i {
+    font-size: 40px;
+    color: #333;
+}
+
+.skills .container .skills-grid {
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+.skills .container .skills-grid .skill-item .skill-icon:hover {
+    background-color: #ffffffdc;
+}
+
+
+.container-about #message-sep {
+    width: 50%;
+    margin-left: 80px;
+}
+
+
+.container .service {
+    width: 50%;
+    float: right;
+    color: #007bff;
+
+}
+
+.container .service h3 {
+    font-size: 1rem;
+}
+
+
+.container .service .bx-icon i {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: #ffffff8c;
+}
+
+
+.icon-description h2 {
+    color: #007bff;
+}
+
+.icon-description {
+
+    text-align: left;
+    display: none; /* Inicialmente escondido */
+    position:absolute;
+    top: 450%; /* Posicionado abaixo do ícone */
+    left: -10px; /* Centralizado horizontalmente em relação ao ícone */
+    transform: translateX(100%); /* Centralizar exatamente */
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 600%; /* Tamanho baseado no conteúdo */
+
+    line-height: 30px;
+}
+
+.skill-icon .description-one {
+    left: -155%;
+}
+
+.skill-icon .description-two {
+    top: 330%;
+}
+
+.skill-icon .description-tree {
+    top: 330%;
+    left: -155%;
+}
+
+.skill-icon .description-four {
+    top: 210%;
+}
+
+.skill-icon .description-five {
+    top: 210%;
+    left: -155%;
+}
+
+.skill-icon .description-six {
+    top: 90%;
+}
+
+.skill-icon .description-seven {
+    top: 90%;
+    left: -155%;
+}
+
+.skill-icon .description-eight {
+    top: -33%;
+}
+
+.skill-icon .description-nine {
+    top: -33%;
+    left: -155%;
+
+}
+
+.cont .col-contact{
+    color: white;
+}
+
+.bx-info-message .row button{
+    margin-left: 9px;
+    padding: 1%;
+    width: 97%;
+    background-color: #007bff;
+    border: 0;
+    border-radius: 8px;
+}
+
+.bx-info-message .row button:hover {
+    transition: 0.4;
+    background-color: #455de4;
+    
+}
+
+/*
+@keyframes progress-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+*/
+
+
+/* footer Page */
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer h3{
+    font-size: 48px;
+}
+
+footer .right{
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 26px;
+}
+
+footer .right .links{
+    display: flex;
+    gap: 30px;
+}
+
+footer .right .links a{
+    color: #989898;
+    transition: color 0.3s ease;
+}
+
+footer .right .links a:hover{
+    color: #fff;
+}
+
+footer .right .social{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .right .social i{
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+footer .right .social i:hover{
+    color: #304ffe;
+}
+
+footer .right p{
+    font-size: 13px;
+    color: #777;
+}
+
+/* Estilo básico para o botão */
+#btnTopo {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 30px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+  
+#btnTopo:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 1400px) {
+
+    
+    nav,
+    header,
+    h2.separator,
+    .sell-nft,
+    .nft-shop,
+    .sellers{
+        padding: 0 40px;
+    }
+
+    header .left h1{
+        font-size: 60px;
+    }
+
+    header img{
+        width: 540px;
+    }
+
+    .nav-opt .nft-list .item img{
+        width: 220px;
+        height: 220px;
+    }
+
+    footer{
+        padding: 100px 40px;
+    }
+
+    footer h3{
+        font-size: 38px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    
+    header .left h1{
+        font-size: 48px;
+    }
+
+    header img{
+        width: 480px;
+    }
+
+    h2.separator{
+        font-size: 34px;
+    }
+
+    .sell-nft .item .header i{
+        font-size: 36px;
+    }
+
+    .sell-nft .item .header h5{
+        font-size: 15px;
+    }
+
+    .sell-nft .item p{
+        font-size: 13px;
+    }
+
+    .nav-opt .nft-list{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .nav-opt .nft-list .item{
+        width: 48%;
+    }
+
+    .nav-opt .nft-list .item img{
+        width: 100%;
+        height: auto;
+    }
+
+    .sellers{
+        flex-wrap: wrap;
+    }
+
+    .sellers .item{
+        width: 48%;
+    }
+
+    footer .links a{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    body{
+        background-color: black;  /* #151515 */
+    
+        background-image: url('../img/fundo4.jpeg'); /* Caminho da sua imagem */
+        background-size: contain; /* Cobrir toda a área do body */
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    
+        padding-top: 70px; /* Ajuste conforme a altura da sua navbar */
+    
+    }
+    
+    nav a.logo{
+        font-size: 28px;
+    }
+
+    #home-section .info-left {
+        width: 100%;
+
+    }
+
+    .about-me-section .separator {
+        font-size: 10px;
+    }
+
+    #home-section .info-left h1 {
+        font-size: 50px;
+    }
+
+    .container {
+        padding: 30px;
+        margin: 0;
+
+    }
+
+    .container .sobre-content {
+        display: flex;
+        width: 180%;
+    }
+
+    .container .sobre-content p {
+        font-size: 12px;
+        width: 100%;
+        margin: 0;
+        
+    }
+
+    .container .sobre-content img {
+        height: 100px;
+        width: 60px;
+        margin-top: 135%;
+        margin-left: -50px;
+        position: absolute;
+    }
+
+    .container .container-left {
+        margin-top: 40px;
+    }
+    nav .links a{
+        font-size: 14px;
+    }
+
+    header{
+        flex-direction: column-reverse;
+        height: auto;
+        margin-bottom: 60px;
+    }
+
+    header .left{
+        width: 100%;
+    }
+
+    header img{
+        width: 100%;
+    }
+
+    .sell-nft{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .sell-nft .item{
+        width: 48%;
+    }
+
+    .sellers{
+        gap: 20px;
+    }
+
+    footer{
+        flex-direction: column;
+        padding: 60px 40px;
+    }
+
+    footer h3{
+        margin-bottom: 40px;
+        font-size: 32px;
+    }
+
+    footer .right{
+        width: 100%;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    
+    nav,
+    header,
+    h2.separator,
+    .sell-nft,
+    .nav-opt,
+    .sellers{
+        padding: 0 20px;
+    }
+
+    nav a.logo{
+        display: none;
+    }
+
+    nav .links a{
+        font-size: 12px;
+    }
+
+    nav .login button{
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    header .left h1{
+        font-size: 36px;
+    }
+
+    header .left p{
+        font-size: 14px;
+    }
+
+    header .left a{
+        padding: 6px;
+        width: 160px;
+        font-size: 14px;
+    }
+
+    header .left a i{
+        padding: 6px;
+    }
+
+    h2.separator{
+        font-size: 30px;
+    }
+
+    footer{
+        padding: 40px 20px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    
+    header .left h1{
+        font-size: 30px;
+    }
+
+    .sell-nft .item{
+        width: 100%;
+    }
+
+    .nav-opt .nft-list .item,
+    .sellers .item{
+        width: 47%;
+    }
+
+    .nav-opt .category a{
+        font-size: 13px;
+    }
+
+}
+
+
+
